@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.0'
+ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0.rc1'
@@ -18,7 +18,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -56,6 +56,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'friendly_id', '~> 5.2', '>= 5.2.5'
 gem 'sidekiq', '~> 5.2', '>= 5.2.7'
+
+#consultly specific
+gem 'simple_calendar', '~> 2.3'
+gem 'trix', '~> 0.11.1'
+gem 'stripe', '~> 4.19'
+
 group :development, :test do
   gem 'better_errors'
 end
